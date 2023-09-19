@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <form action="">
-        <h2> ĐĂNG KÝ HỌC VIÊN</h2> 
-            <td>Họ và tên</td>
-            <table> <input type="text" name="yourname" id=""></table> <br>
-            <td>Ngày sinh</td>
-            <table> <input type="text" name="yourname" id=""></table> <br>
-            <td>Giới tính</td>
-            <input type="radio" name="gender" id="">Nam
-            <input type="radio" name="gender" id="">Nữ <br>
-            <td>Địa chỉ</td>
-            <table>
-                <input type="text" name="" id="">
-            </table> <br>
-            <td>Lớp</td>
-            <table> <input type="text" name="" id=""></table>
-             <br>
-            <td>email</td>
-            <table> <input type="text" name="" id=""> </table> <br>
-            <td>số điện thoại</td>
-            <table> <input type="text" name="" id=""></table> <br>
-            <input type="submit" value="Đăng ký">
-            <input type="submit" value="Nhập lại">
     </form>
+    <table border="1">
+        <tr>
+            <th colspan="2"> ĐĂNG KÝ HỌC VIÊN </th>
+        </tr>
+        <tr>
+            <td>Họ và tên</td>
+            <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td>Ngày Sinh</td>
+            <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td>
+                <input type="radio" name="gender" id="">Nam
+                <input type="radio" name="gender" id="">Nữ
+            </td>
+        </tr>
+        <tr>
+            <td>Lớp</td>
+            <td><select name="Lớp-">
+                    <option value="0">-Chọn Lớp-</option>
+                    <option value="1">Lớp 1</option>
+                    <option value="2">Lớp 2</option>
+                    <option value="3">Lớp 3</option>
+                    <option value="4">Lớp 4</option>
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td>Số Đt</td>
+            <td> <input type="text"></td>
+        </tr>
+        <tr>
+            <td> </td>
+            <td>
+                <input type="button" value="Đăng Ký">
+                <input type="reset" value="Nhập lại">
+            </td>
+        </tr>
+    </table>
 </body>
+
 </html>

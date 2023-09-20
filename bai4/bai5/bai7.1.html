@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vat_ly
+        var hoa_hoc
+        var sinh_hoc
+        vat_ly = prompt('Nhập điểm vật lý')
+        hoa_hoc = prompt('Nhập điểm hóa học')
+        sinh_hoc = prompt('Nhập điểm sinh học')
+        var vatly = parseInt(vat_ly)
+        var hoahoc = parseInt(hoa_hoc)
+        var sinhhoc = parseInt(sinh_hoc)
+        var diemtrungbinh = (vatly + hoahoc + sinhhoc) / 3
+        document.write("điểm trung bình : " + diemtrungbinh)
+    </script>
+</body>
+</html>

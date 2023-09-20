@@ -1,8 +1,17 @@
+/** Toán tử số học
+ +          --> Cộng
+ -          --> Trừ
+ *          --> Nhân
+ **         --> Lũy thừa
+ /          --> Chia
+ %          --> Chia lấy số dư
+ ++         --> Tăng 1 giá trị
+ --         --> Giảm 1 gía trị
+ */
 
-var fullName = 'Nguyen Ngoc Thang';
-var age = 18;
+ var a = 1;
+ var b = 2;
 
-alert(fullName);
-alert(age);
+ var c = a + b;
 
-console.log('Day la 1 dong log')
+ document.getElementById(c);

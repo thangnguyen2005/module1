@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" name="" id="thang">
+    <input type="button" onclick="xu_ly()" value="ok">
+    <p id="thanh"></p>
+    <script>
+        function xu_ly() {
+            var thang = document.getElementById('thang').value
+            document.getElementById('thanh').innerHTML = thang
+        }
+
+    </script>
+</body>
+
+</html>

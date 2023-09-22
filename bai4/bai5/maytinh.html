@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+<body>
+    <p style="color: rgb(122, 8, 229); text-align: center;">Máy tính</p>
+    <script>
+        function addValue(value) {
+            document.getElementById('so').value += value;
+        }
+
+        function clearValue() {
+            document.getElementById('so').value = "";
+        }
+
+        function calculateResult() {
+            var expression = document.getElementById('so').value;
+            var result = eval(expression);
+            document.getElementById('so').value = result;
+        }
+    </script>
+
+    <table style="background-color: aqua;" border="1">
+        <tr>
+            <td colspan="4" style="background-color: deeppink;"> <input type="text" name="so" id="so"></td>
+        </tr>
+        <tr>
+            <td> <input style="width: 99%;" type="button" onclick="addValue('7')" value="7"></td>
+            <td> <input style="width: 99%;" type="button" onclick="addValue('8')" value="8"></td>
+            <td> <input style="width: 99%;" type="button" onclick="addValue('9')" value="9"></td>
+            <td> <input style="width: 99%;" type="button" onclick="addValue('/')" value="/"></td>
+        </tr>
+        <tr>
+            <td> <input style="width: 99%;" type="button" onclick="addValue('4')" value="4"></td>
+            <td> <input style="width: 99%;" type="button" onclick="addValue('5')" value="5"></td>
+            <td> <input style="width: 99%;" type="button" onclick="addValue('6')" value="6"></td>
+            <td> <input style="width: 99%;" type="button" onclick="addValue('*')" value="*"></td>
+        </tr>
+        <tr>
+            <td> <input style="width: 99%;" type="button" onclick="addValue('1')" value="1"></td>
+            <td> <input style="width: 99%;" type="button" onclick="addValue('2')" value="2"></td>
+            <td> <input style="width: 99%;" type="button" onclick="addValue('3')" value="3"></td>
+            <td> <input style="width: 99%;" type="button" onclick="addValue('-')" value="-"></td>
+        </tr>
+        <tr>
+            <td> <input style="width: 99%;" type="button" onclick="addValue('0')" value="0"></td>
+            <td> <input style="width: 99%;" type="button" onclick="clearValue('C')" value="C"></td>
+            <td> <input style="width: 99%;" type="button" onclick="calculateResult('=')" value="="></td>
+            <td> <input style="width: 99%;" type="button" onclick="addValue('+')" value="+"></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

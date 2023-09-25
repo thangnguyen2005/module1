@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Bài 1
+    <script>
+            var a = prompt('Nhập số a')
+            var b = prompt('Nhập số b')
+            var c = a % b
+            if (c == 0) {
+                alert('chia hết')
+            }
+            else {
+                alert('không chia hết')
+            }
+    </script> 
+    Bài 2
+    <script>
+        var tuoi = prompt('Nhập tuổi')
+        if (tuoi <= 14) {
+            alert('Không đủ điều kiện học lớp 10')
+        }
+    </script> -->
+    <!-- Bài 3
+    <script>
+        var so = prompt('Nhập số')
+        if (so >=0) {
+            alert("Lớn hơn 0")
+        }
+        else {
+            alert('Nhỏ hơn 0')
+        }
+    </script> -->
+    <!-- Bài 4
+    <script>
+        var a = prompt('Nhập số thứ nhất')
+        var b = prompt('Nhập số thứ hai')
+        var c = prompt('Nhập số thứ ba')
+        if (a > b && a > c) {
+            alert('a là số lớn nhất')
+        }
+        else if (b > a) {
+            alert('b là số lớn nhất')
+        }
+        else {
+            alert('c là số lớn nhất')
+        }
+    </script> -->
+    <!-- Bài 5
+    <script>
+        var diemkt = prompt('Điểm bài kiểm tra')
+        var diemgk = prompt('Điểm thi giữa kỳ')
+        var diemck = prompt('Điểm thi cuối kỳ')
+        diemkt = parseInt(diemkt)
+        diemgk = parseInt(diemgk)
+        diemck = parseInt(diemck)
+        var diemtb = (diemkt + (diemgk * 2) + (diemck * 3 )) / 6
+        if (diemtb > 8) {
+            alert('Học giỏi')
+        }
+        else if (diemtb < 8 && diemtb > 6.5) {
+            alert('Học khá')
+        }
+        else if (diemtb < 6.5 && diemtb > 5) {
+            alert('Học gần ngu')
+        }
+        else {
+            alert('Học ngu')
+        }
+    </script> -->
+    <!-- Bài 6
+    <script>
+        var doanhthu = prompt('Nhập số tiền kiếm được');
+        doanhthu = parseFloat(doanhthu);
+        if (doanhthu < 10000000) {
+            alert('Không có hoa hồng')
+        }
+        else if (doanhthu >1000000 && doanhthu < 5000000) {
+            alert('Hoa hồng là 0.5%')}
+        else if (doanhthu >5000000 && doanhthu < 10000000) {
+            alert('Hoa hồng là 1%')
+        }
+        else {
+            alert('Hoa hồng là 1.5%')
+        }
+    </script> -->
+    <!-- Bài 7
+    <input type="text" name="" id="goi" placeholder="số phút gọi"> <br>
+    <input type="text" name="" id="tn" placeholder="số tin nhắn"> <br>
+    <input type="text" name="" id="gb" placeholder="dữ liệu sử dụng"> <br>
+    <input type="button" onclick="kiemtra()" value="Tính tiền">
+    <p id="thanhtien"></p>
+    <script>
+        function kiemtra() {
+            var phutgoi = document.getElementById('goi').value
+            var tinnhan = document.getElementById('tn').value
+            var mang = document.getElementById('gb').value
+            phutgoi = parseInt(phutgoi)
+            tinnhan = parseInt(tinnhan)
+            mang = parseInt(mang)
+            var thanhtoan = phutgoi*2000 + tinnhan*500 + mang*750
+            document.getElementById('thanhtien').innerHTML = 'Số tiền phải' + " " + thanhtoan + " " + 'VND'
+        }
+    </script> -->
+</body>
+
+</html>

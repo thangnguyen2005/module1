@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var sum = 0;
+        var number;
+        while (true) {
+            number = parseInt(prompt("Nhập một số:"));
+            if (number === -1) {
+                break;
+            }
+            sum += number;
+            console.log("Số vừa nhập:", number);
+        }
+        console.log("Tổng các số đã nhập:", sum);
+    </script>
+
+</body>
+
+</html>

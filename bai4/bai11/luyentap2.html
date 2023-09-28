@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- bai 1
+    <script>
+         var sothunhat = 0
+        var sothuhai = 1
+        console.log(sothunhat);
+        for (let i = 2; i <= 100; i++) {
+            console.log(sothuhai);
+            var sothuba = sothunhat + sothuhai
+            sothunhat = sothuhai
+            sothuhai = sothuba
+        }
+    </script> -->
+    <!-- bai 2
+    <script>
+        function tinhGiaiThua(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            } else {
+                return n * tinhGiaiThua(n - 1);
+            }
+        }
+        var n = prompt('Nhap so nguyen duong');
+        var ketQua = tinhGiaiThua(n);
+        console.log(ketQua);
+    </script> -->
+    <table border="1">
+        <tr>
+            <td> Số tiền vay <input placeholder="VNĐ" name="" id="tien" value=""> </td>
+            <td> Lãi xuất vay <input placeholder="%/Năm" name="" id="lai" value=""> </td>
+        </tr>
+        <tr>
+            <td>Kỳ hạn vay <input placeholder="Tháng" name="" id="ky" value=""> </td>
+            <td><input type="radio" name="gender" id="">Trả trên dư nợ giảm dần <br>
+                <input type="radio" name="gender" id="">Trả trên dư nợ ban đầu
+            </td>
+        </tr> <br>
+        <td colspan="2">
+            <input style="width: 100%;" type="button" onclick="xuly()" value="THỰC HIỆN">
+        </td>
+    </table>
+
+    <script>
+        function tinhLai() {
+            var tien = parseFloat(document.getElementById('tien').value);
+            var lai = parseFloat(document.getElementById('lai').value);
+            var ky = parseFloat(document.getElementById('ky').value);
+
+            if (isNaN(tien) || isNaN(lai) || isNaN(ky)) {
+                alert("Vui lòng nhập đầy đủ thông tin số tiền vay, lãi xuất và kỳ hạn vay.");
+                return;
+            }
+
+            var tienLai = tien * (lai / 100);
+            var tongTien = tien + tienLai;
+
+            alert("Tiền lãi cần trả: " + tienLai.toFixed(2) + " VNĐ");
+            alert("Tổng số tiền cần trả: " + tongTien.toFixed(2) + " VNĐ");
+        }
+    </script>
+</body>
+
+</html>

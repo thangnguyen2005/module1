@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var books = ["van", "su", "dia"]
+        books.push("tieng anh")
+        books[books.length] = "sinh hoc"
+        books[5] = "tieng viet"
+        books[7] = "hoa"
+        console.log(books[0]);
+        console.log(books[1]);
+        console.log(books[2]);
+
+        books[0] = "van_hoc"
+        books[1] = "su_hoc"
+        books[2] = "dia_ly"
+        console.log(books.length);
+        console.log(books);
+
+        for (var key in books) {
+            console.log(key);
+            console.log(books[key]);
+        }
+
+        for (var item of books) {
+            console.log(item);
+        }
+
+        for (let i = 0; i < books.length; i++) {
+         console.log(books[i]);
+            
+        }
+        books.reverse()
+        books.sort()
+        console.log(books.join('+'));
+        
+    </script>
+</body>
+</html>

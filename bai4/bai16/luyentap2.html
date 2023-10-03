@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- bai 1
+    <script>
+        function binh_phuong(a) {
+            let b = a * a
+            return b
+        }
+        binh_phuong()
+        document.write(binh_phuong(3))
+    </script> -->
+    <!-- bai 2
+
+    <script>
+        function dientich(r) {
+            dientich = r * r * 3.14
+            return dientich
+        }
+        function chuvi(r) {
+            chuvi = r * 2 * 3.14
+            return chuvi
+        }
+        document.write( "diện tích hình tròn là :" + " " + dientich(3) + "<br>")
+        document.write( "chu vi hình tròn là :" + " " + chuvi(3))
+    </script> -->
+
+    <!-- bai 3
+    <script>
+        function tinhGiaiThua(n) {
+            if (n === 0) {
+                return 1;
+            } else {
+                return n * tinhGiaiThua(n - 1);
+            }
+        }
+        var n = prompt('Nhập số nguyên để tính giai thừa');
+        var giaiThua = tinhGiaiThua(parseInt(n));
+        document.write("Giai thừa của " + n + " là: " + giaiThua);
+    </script> -->
+    <!-- bai 4
+    <script>
+        function isDigit(character) {
+            return !isNaN(parseInt(character)) && isFinite(character);
+        }
+        var character = prompt('Nhập vô')
+        var isNumber = isNumeric(character);
+        console.log(isNumber)
+
+    </script> -->
+
+    <!-- bai 5
+    <script>
+        let a = prompt('Nhập số a')
+        let b = prompt('Nhập số b')
+        let c = prompt('Nhập số c')
+        function so() {
+            if (a < b && a < c) {
+                document.write(a + " " + 'là số nhỏ nhất')
+                return a
+            }
+            else if (b < a && b < c) {
+                document.write(b + " " +  'là số nhỏ nhất')
+                return b
+            }
+            else {
+                document.write(c + " " + 'là số nhỏ nhất')
+                return c
+            }
+        }
+        so()
+    </script> -->
+
+    <!-- bai6
+    <script>
+        function xu_ly() {
+            if (n > 0) {
+                document.write(true)
+                return n
+            }
+            else {
+                document.write(false)
+            }
+        }
+        let n = prompt('nhap so vao')
+        xu_ly()
+
+    </script> -->
+
+    <!-- bai 7
+    <script>
+        function chuyendoi(a, b) {
+            [a, b] = [b, a]
+            return [a, b]
+        }
+        chuyendoi()
+        document.write("sau khi chuyển đổi" + " " + chuyendoi(3,2))
+    </script> -->
+
+    <!-- bai 8
+    <script>
+        let songuyen = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        document.write('mảng trước khi đảo ngược là :' + " " + songuyen + "<br>")
+        function dao_nguoc_mang() {
+        }
+        document.write('mảng sau khi đảo ngược là :' + " " + songuyen.reverse())
+        
+    </script> -->
+
+    <script>
+        function countCharacterOccurrences(arr, character) {
+            let count = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === character) {
+                    count++;
+                }
+            }
+            return count === 0 ? -1 : count;
+        }
+        let arr = ['a', 'b', 'c', 'a', 'd', 'e', 'a'];
+        let character = 'a';
+
+        let result = countCharacterOccurrences(arr, character);
+        console.log(`Ký tự '${character}' xuất hiện ${result} lần trong mảng.`); // Ký tự 'a' xuất hiện 3 lần trong mảng.
+
+        character = 'z';
+        result = countCharacterOccurrences(arr, character);
+        console.log(`Ký tự '${character}' xuất hiện ${result} lần trong mảng.`); // Ký tự 'z' xuất hiện -1 lần trong mảng.
+    </script>
+</body>
+
+</html>

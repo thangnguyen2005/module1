@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chuyển đổi nhiệt độ</h1>
+    <p>Nhập độ F vào để chuyển sang độ C</p>
+    Độ F:<input type="number" oninput="chuyendoi()" name="" id="F">
+    <p id="ket_qua"></p>
+    <script>
+        function chuyendoi() {
+          var  F = document.getElementById("F").value
+           var C = (F - 32)/1.8
+           document.getElementById("ket_qua").innerHTML = C 
+        }
+    </script>
+</body>
+</html>

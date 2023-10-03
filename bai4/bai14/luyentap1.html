@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- bai 1
+    <script>
+        var songuyen = [21,2,12,3,5,23,54,11,8,6]
+        var a = []
+            for (let i = 0; i < songuyen.length; i++) {
+               if (songuyen[i] > 10) {
+            a.push(songuyen[i])
+        }
+    }
+    console.log(a);
+    </script> -->
+    <!-- bai 2
+    <script>
+        var nums = [12,2,3,4,1,6,9,11,32,21]
+        var max =  nums[0]
+        var maxindex = 0
+        for (let i = 0; i < nums.length; i++) {
+        if (nums[i] > max) {
+            max = nums[i]
+            maxindex = i
+        }
+    }
+        console.log("giá trị lớn nhất là:" + " " + max + " " + "vị trí là" + " " + maxindex);
+    </script> -->
+    <!-- bai 3
+     <script>
+        var songuyen = [12,24,33,4,1,6,9,11,32,21]
+        var max =  songuyen[0]
+        var sum = 0
+        for (let i = 0; i < songuyen.length; i++) {
+          if (songuyen[i] > max) { 
+            max = songuyen[i]
+        }
+        sum = sum + songuyen[i]
+    }
+    console.log(max);
+    console.log(sum);
+     </script> -->
+    <!-- bai 4
+    <script>
+        function songuyen(so) {
+            return so.reverse();
+        }
+
+        function nhapso() {
+            var n = (prompt("Nhập số phần tử của mảng: "));
+            var so = [];
+            for (var i = 0; i < n; i++) {
+                var element = (prompt("Nhập phần tử thứ " + (i + 1) + ": "));
+                so.push(element);
+            }
+            return so;
+        }
+
+        var mangNhap = nhapso();
+        console.log("Mảng gốc: " + mangNhap);
+        console.log("Mảng sau khi đảo ngược: " + songuyen(mangNhap));
+    </script> -->
+    <!-- bai 6
+    <script>
+        function nhapso() {
+            var n = (prompt("Nhập số phần tử của mảng: "));
+            var so = [];
+            for (var i = 0; i < n; i++) {
+                var element = (prompt("Nhập phần tử thứ " + (i + 1) + ": "));
+                so.push(element);
+            }
+            return so;
+        }
+
+        var mangNhap = nhapso();
+        console.log(mangNhap);
+
+        var V = prompt('Nhập vào số nguyên')
+        for (let i = 0; i < mangNhap.length; i++) {
+            if (V == mangNhap[i]) {
+                alert('đúng rồi');
+            }
+            else {
+                alert('sai rồi')
+            }
+        }
+    </script> -->
+    <!-- bai 7
+    <script>
+        var songuyen = [1,2,3,4,5,6,7,8,9,10]
+        var V = prompt('Nhập V')
+        var index = -1
+        for (let i = 0; i < songuyen.length; i++) {
+            if (V == songuyen[i]) {
+                index = i
+            }
+        }
+
+        songuyen.splice(index,1)
+        songuyen.push(0)
+        console.log(songuyen);
+    </script> -->
+    <!-- bai 8
+    <script>
+        var songuyen = [1,3,5,7,9,11,13,2,6,8]
+        songuyen.sort(function(a,b) {
+            return b - a
+        }) 
+        console.log(songuyen);
+    </script> -->
+    <!-- bai 10
+    <script>
+        var a = [1,2,3,4,5,6,7,8,9,10]
+        var b = [11,12,13,14,15,16,17,18,19,20]
+        var c = a.concat(b)
+        console.log(c);
+    </script> -->
+</body>
+
+</html>

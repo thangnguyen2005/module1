@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Đánh caro</h3>
+    <input type="button" onclick="xu_ly()" value="Đánh">
+    <p id="kiemtra"></p>
+    <script>
+        var a = document.getElementById("kiemtra");
+
+        var caro = [];
+        var data = "";
+        for (let i = 0; i < 5; i++) {
+            caro[i] = [0, 0, 0, 0, 0];
+        }
+        for (let i = 0; i < 5; i++) {
+            data += '<br>';
+            for (let j = 0; j < 5; j++) {
+                data += caro[i][j] + "&nbsp;&nbsp;";
+            }
+        }
+        data += "<br/><br/><input type='button' value='Change Value' onclick='xu_ly()'>";
+        a.innerHTML = data;
+
+        function xu_ly() {
+            var X = prompt('Nhập vị trí');
+            var Y = prompt('Nhập vị trí');
+            data = "";
+            caro[X][Y] = "x"
+            for (let i = 0; i < 5; i++) {
+                data += '<br>';
+                for (let j = 0; j < 5; j++) {
+                    data += caro[i][j]  + "&nbsp;&nbsp;&nbsp;&nbsp;";
+                }
+            }
+            data += "<br/><br/><input type='button' value='Change Value' onclick='xu_ly()'>";
+            a.innerHTML = "<hr/>" + data;
+        }
+    </script>
+</body>
+
+</html>

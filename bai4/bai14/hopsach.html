@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var tu_sach = [
+            ['van', 'su', 'dia'],
+            ['toan', 'ly', 'hoa'],
+            ['gdcd', 'anh', 'tin'],
+        ]
+
+        console.log(tu_sach);
+        console.log(tu_sach[0][0]);
+        console.log(tu_sach[0][1]);
+        console.log(tu_sach[0][2]);
+        console.log(tu_sach[1][0]);
+        console.log(tu_sach[1][1]);
+        console.log(tu_sach[1][2]);
+        console.log(tu_sach[2][0]);
+        console.log(tu_sach[1][1]);
+        console.log(tu_sach[1][2]);
+
+        tu_sach[0][0] = "van hoc"
+        tu_sach[0][1] = "su hoc"
+        tu_sach[0][2] = "dia ly"
+        tu_sach[1][0] = "toan hoc"
+        tu_sach[1][1] = "vat ly"
+        tu_sach[1][2] = "hoa hoc"
+        console.log(tu_sach);
+
+        tu_sach[0].push("tieng viet")
+        console.log(tu_sach[0].length);
+        tu_sach[1].push('cong nghe')   
+        tu_sach[2].push('my thuat')   
+
+        for (let i = 0; i < tu_sach.length; i++) {
+            for (let j = 0; j < tu_sach[i].length; j++) {
+                console.log(tu_sach[i][j]);
+            }
+            }
+        
+    </script>
+</body>
+
+</html>

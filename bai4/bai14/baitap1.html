@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        var mau = ['do','vang','trang','xanh']
+        console.log(mau.toString());
+        console.log(mau.join());
+        console.log(mau.join('+'));
+    </script> -->
+    <script>
+        function xuly(number) {
+            var so = number.toString();
+            var result = so[0];
+
+            for (var i = 1; i < so.length; i++) {
+                var num = parseInt(so[i]);
+                var chia2 = parseInt(so[i - 1]);
+
+                if (num % 2 === 0 && chia2 % 2 === 0) {
+                    result += "-" + num;
+                } else {
+                    result += num;
+                }
+            }
+
+            return result;
+        }
+
+        var input = prompt("Nhập số: ");
+        var output = xuly(input);
+        console.log(output);
+    </script>
+</body>
+
+</html>

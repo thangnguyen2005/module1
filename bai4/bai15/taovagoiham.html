@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function xu_ly(answer) {
+        let result = "";
+        if (answer) {
+            result = "Tốt quá, vậy thì chúng ta chơi 1 ván cờ.";
+        } else {
+            result = "tiếc quá, để lần sau vậy.";
+        }
+        return result;
+    }
+    
+    let confirmAnswer = confirm("Bạn có muốn chơi game ko?");
+    let theAnswer = xu_ly(confirmAnswer);
+    alert(theAnswer);
+    </script>
+</body>
+</html>
